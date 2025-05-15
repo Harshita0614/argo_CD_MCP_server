@@ -13,7 +13,7 @@ spec:
         app: guestbook
     spec:
       containers:
-        - name: guestbook
-          image: k8s.gcr.io/echoserver:1.4
-          ports:
-            - containerPort: 80
+      - name: guestbook
+        image: nginx:latest
+        ports:
+        - containerPort: 80
